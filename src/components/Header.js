@@ -11,7 +11,7 @@ function Header() {
             <Link href="#">Mohamed Jalloh</Link>
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-                Front End Engineer
+                Front-End Web Developer
                 </h2>
                 <p className="mt-4 max-w-xs leading-normal">I present my ideas with my code. creating web sites and apps that bring about solutions to our problems in these days of fast growing technology</p>
 
@@ -23,13 +23,13 @@ function Header() {
 
                 <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
                 <li className="mr-5 shrink-0 text-xs">
-                <a className="block hover:text-slate-200" href="#" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)" title="GitHub">
+                <a className="block hover:text-slate-200" href="https://github.com/OneCode-AA" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)" title="GitHub">
                 <span className="sr-only">GitHub</span>
                 <GitHub/>
                 </a>
                 </li>
                 <li className="mr-5 shrink-0 text-xs">
-                  <a className="block hover:text-slate-200" href="#" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
+                  <a className="block hover:text-slate-200" href="https://www.linkedin.com/in/abooabdillaahmbj/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
                   <span className="sr-only">LinkedIn</span>
                   <LinkedIn/>
                   </a>

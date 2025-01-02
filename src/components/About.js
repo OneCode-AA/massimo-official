@@ -12,16 +12,16 @@ function About() {
 <article>
 <p className="mb-4">
   Frontend developer with a passion for creating responsive, user-friendly interfaces. Proficient in HTML, CSS, and JavaScript, with hands-on experience in React.js and Next.js frameworks. Skilled in UI design using Bootstrap and Tailwind CSS. Eager to leverage my technical skills and collaborative spirit to contribute effectively to innovative frontend projects. 
-  Previous experience at CourseCareer and Coursera has equipped me with practical knowledge in software development and frontend design principles. Seeking opportunities to grow and learn in a dynamic team environment.
+  Previous experience at <span className="text-white">CourseCareer</span>  and <span className="text-white">Coursera</span>  has equipped me with practical knowledge in software development and frontend design principles. Seeking opportunities to grow and learn in a dynamic team environment.
 
   </p>
   
-<p className="mb-4"> Currently working as a Full Stack Web Developer @ The Two Migrations, I am in charge of their main site and any web apps associated with the company from their clients web applications tools and more.</p>
+<p className="mb-4"> Currently working as a <span className="text-white">Full Stack Web Developer</span> <span className="text-white">@ The Two Migrations</span> , I am in charge of their main site and any web apps associated with the company from their clients web applications tools and more.</p>
   
 
 <p className="mb-4"> I must say, I love it!</p>
   
-  <p className="mb-4">Ooh! btw, Welcome to my page, as you maybe not know, it was inspired by Miss <a href="https://brittanychiang.com/" className="">Brittany Chiang</a> and now another pro in the field <a href="https://misterbastean.herokuapp.com/" className="">Mister Bastean</a>
+  <p className="mb-4">Ooh! btw, Welcome to my page, as you may not know, it was inspired by <br/> <a href="https://brittanychiang.com/" className="text-white">Miss Brittany Chiang</a> and now another pro in the field <a href="https://misterbastean.herokuapp.com/" className="text-white">Mister Bastean</a>
   
   <br/>
   .... please check them out</p>
