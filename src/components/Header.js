@@ -4,6 +4,9 @@ import Nav from './Nav'
 import { GitHub, LinkedIn } from '@mui/icons-material'
 
 function Header() {
+
+
+
   return (
     <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24'>
         <div className="">
@@ -46,6 +49,10 @@ function Header() {
                   <a className="block hover:text-slate-200" href="#" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)" title="#">
                   <span className="sr-only">#</span></a>
               </li> */}
+
+              <button className={`themeBtn p-[4px] w-[3rem] h-[4vh] bg-slate-800 rounded-[100px] `}>
+                <span className={`relative w-[20px] h-[20px] rounded-[50px] block status-indicator`}></span>
+              </button>
             </ul>
        
     </header>
