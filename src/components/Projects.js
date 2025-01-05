@@ -9,7 +9,7 @@ const projects = [
       id: 1,
       image: '/todo-2k25.png',
       name: 'Todo App 2K25',
-      linkurl: 'www.todo-app-2k25.vercel.app/',
+      linkurl: 'https://todo-app-2k25.vercel.app/',
       description: 'Forget alot? bad with time management? so am i, so i created an app to help us both. my new task manager app.',
       technologies: [
       { id: 1, name: 'Next.js' },
@@ -70,10 +70,10 @@ function Projects() {
 
                 <article className='z-10 sm:order-2 sm:col-span-6'>
                     <h3 className="">
-                    <a className="inline-flex items-baseline font-medium leading-tight focus-visible:text-teal-300  group/link text-base" href={`#`} target="_blank" rel="noreferrer noopener" aria-label={`${project.name}(opens in a new tab)`} >
+                    <Link className="link inline-flex items-baseline font-medium leading-tight focus-visible:text-teal-300  group/link text-base" href={`${project.linkurl}`} target="_blank" rel="noreferrer noopener" aria-label={`${project.name}(opens in a new tab)`} >
                     <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>{project.name} <span className="inline-block"> <LinkOutlined/>  </span>
                     </span>
-                    </a>
+                    </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">{project.description}</p>
                     <ul className="project-ul mt-2 flex flex-wrap" aria-label="Technologies used:">
@@ -97,7 +97,9 @@ function Projects() {
                 loading="lazy" 
                 decoding="async" 
                 data-nimg="1" 
-                className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style="color:transparent"/>
+                className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" 
+                style={{ color: 'transparent' }}
+                />
 
                 </section>
             </li>
@@ -105,7 +107,8 @@ function Projects() {
         </ul>
 
         <section className="mt-12">
-            <Link className="inline-flex items-center font-medium leading-tight no-underline group" aria-label="View Full Project Archive" href="../pages/archive.js">
+          
+            <Link className="link inline-flex items-center font-medium leading-tight no-underline" aria-label="View Full Project Archive" href="/archive">
             <span>
                 <span className=" pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                     View Full Project </span><span className="whitespace-nowrap">

@@ -65,6 +65,16 @@ body {
 }
 
 
+.link {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: var(--text-third);
+}
+
 
 .status-indicator {
   left: 0;
@@ -124,6 +134,7 @@ main a {
   text-decoration: none;
 }
 
-#header h1 {
+.header-container h1,
+.header-container h2 {
   color: var(--text-secondary);
 }

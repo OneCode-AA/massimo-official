@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24'>
-        <div className="">
+        <div className="header-container">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             <Link href="#">Mohamed Jalloh</Link>
             </h1>

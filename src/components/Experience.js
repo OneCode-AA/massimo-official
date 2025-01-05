@@ -160,7 +160,7 @@ function Experience() {
 <section className="mt-12">
 <Link href="/resume.pdf" target="_blank"
 rel="noreferrer noopener" aria-label="View Full Resume (opens in a new tab)"
-className="inline-flex items-baseline no-underline font-medium leading-tight group/link text-base" >
+className="link inline-flex items-baseline no-underline font-medium leading-tight group/link text-base" >
 <span>View My Full <span className="inline-block"> Resume <LinkOutlined/>  </span>
 </span>
 </Link>
