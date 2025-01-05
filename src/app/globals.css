@@ -3,24 +3,68 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --color-primary: #0ea5e9;
+  --text-primary: #94a3b8;
+  --text-secondary: #e2e8f0;
+  --text-third: #5eead4;
+  --gold: #fbbf24;
+  --transition-1: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme='light-theme'] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #e2e8f0;
+  --color-primary: #0ea5e9;
+  --text-primary: #0f172a;
+  --text-secondary: #020617;
+  --text-third: #0c4a6e;
+  --gold: #f59e0b;
 }
+
 * {
   scroll-behavior: smooth;
 }
 
+
 body {
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: var(--transition-1);
 }
+
+.theme-btn {
+  min-height: 2vh;
+  padding: 4px;
+  width: 3rem;
+  background: var(--bg-secondary);
+  border-radius: 100px;
+  transition: var(--transition-1);
+  display: block;
+  border: none;
+}
+
+.status-indicator {
+  position: relative;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  box-shadow: inset 9px -6px var(--text-primary);
+  display: block;
+  transition: var(--transition-1);
+}
+
+.status-indicator.day {
+  left: 20px;
+  box-shadow: inset 20px -20px var(--gold);
+  border: 1px solid var(--text-primary);
+}
+
+
 
 .status-indicator {
   left: 0;
@@ -37,4 +81,49 @@ body {
   right: 0.5rem;
   top: 0.5rem;
   z-index: 100;
+}
+
+.social-ul a:hover {
+  color: var(--text-secondary);
+}
+
+.nav-indicator {
+  background: var(--text-primary);
+}
+
+.nav-indicator:hover {
+  background: var(--text-secondary);
+}
+
+.group {
+  color: var(--text-primary);
+}
+
+.group:hover {
+  color: var(--text-secondary);
+}
+
+.xo {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.xo:hover {
+  color: var(--text-third);
+  cursor: pointer;
+}
+
+.tech-ul li,
+.project-ul article {
+  color: var(--text-third);
+}
+
+
+main a {
+  color: var(--text-third);
+  text-decoration: none;
+}
+
+#header h1 {
+  color: var(--text-secondary);
 }

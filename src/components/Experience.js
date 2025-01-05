@@ -95,7 +95,7 @@ function Experience() {
 
 <article className=" section-title sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 
-<h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+<h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">Experience</h2>
 </article>
 
 <article>
@@ -114,9 +114,9 @@ function Experience() {
                 </header>
 
                 <article className="z-10 sm:col-span-6">
-                  <h3 className="font-medium leading-snug text-slate-200">
+                  <h3 className="font-medium leading-snug">
                     <section>
-                      <p className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base">
+                      <p className="inline-flex items-baseline font-medium leading-tight focus-visible:text-teal-300 group/link text-base">
                         <span>
 
                           {experience.title} · <a
@@ -139,12 +139,12 @@ function Experience() {
                     {experience.description}
                   </p>
                   <ul
-                    className="mt-2 flex flex-wrap"
+                    className="tech-ul mt-2 flex flex-wrap"
                     aria-label="Technologies used"
                   >
                     {experience.technologies.map((tech) => (
                       <li className="mr-1.5 mt-2" key={tech.id}>
-                        <section className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                        <section className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 ">
                           {tech.name}
                         </section>
                       </li>
@@ -160,7 +160,7 @@ function Experience() {
 <section className="mt-12">
 <Link href="/resume.pdf" target="_blank"
 rel="noreferrer noopener" aria-label="View Full Resume (opens in a new tab)"
-className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" >
+className="inline-flex items-baseline no-underline font-medium leading-tight group/link text-base" >
 <span>View My Full <span className="inline-block"> Resume <LinkOutlined/>  </span>
 </span>
 </Link>

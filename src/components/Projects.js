@@ -9,7 +9,7 @@ const projects = [
       id: 1,
       image: '/todo-2k25.png',
       name: 'Todo App 2K25',
-      linkurl: 'https://todo-app-2k25.vercel.app/',
+      linkurl: 'www.todo-app-2k25.vercel.app/',
       description: 'Forget alot? bad with time management? so am i, so i created an app to help us both. my new task manager app.',
       technologies: [
       { id: 1, name: 'Next.js' },
@@ -70,16 +70,16 @@ function Projects() {
 
                 <article className='z-10 sm:order-2 sm:col-span-6'>
                     <h3 className="">
-                    <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href={`#`} target="_blank" rel="noreferrer noopener" aria-label={`${project.name}(opens in a new tab)`} >
+                    <a className="inline-flex items-baseline font-medium leading-tight focus-visible:text-teal-300  group/link text-base" href={`#`} target="_blank" rel="noreferrer noopener" aria-label={`${project.name}(opens in a new tab)`} >
                     <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>{project.name} <span className="inline-block"> <LinkOutlined/>  </span>
                     </span>
                     </a>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">{project.description}</p>
-                    <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
+                    <ul className="project-ul mt-2 flex flex-wrap" aria-label="Technologies used:">
                         {project.technologies.map((tech) => (
                         <li className="mr-1.5 mt-2" key={tech.id}>
-                        <article className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                        <article className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 ">
                         {tech.name}   
                         </article>
                         </li>
@@ -105,13 +105,11 @@ function Projects() {
         </ul>
 
         <section className="mt-12">
-            <Link className="inline-flex items-center font-medium leading-tight text-slate-200 group" aria-label="View Full Project Archive" href="../pages/archive.js">
+            <Link className="inline-flex items-center font-medium leading-tight no-underline group" aria-label="View Full Project Archive" href="../pages/archive.js">
             <span>
-                <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
-                    View Full Project 
-                    </span>
-                    <span className="whitespace-nowrap">
-                        <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                <span className=" pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                    View Full Project </span><span className="whitespace-nowrap">
+                        <span className=" pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
                             Archive
                             </span> <LinkOutlined/> </span>
                             </span>
