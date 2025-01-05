@@ -7,15 +7,12 @@ import { Link } from '@mui/material';
 const projects = [
     {
       id: 1,
-      image: '/todo-desktop.png',
-      name: 'ToDO App',
-      linkurl: '',
-      description: 'project description',
+      image: '/todo-2k25.png',
+      name: 'Todo App 2K25',
+      linkurl: 'https://todo-app-2k25.vercel.app/',
+      description: 'Forget alot? bad with time management? so am i, so i created an app to help us both. my new task manager app.',
       technologies: [
-      { id: 1, name: 'HTML & CSS' },
-      { id: 2, name: 'Javascript' },
-      { id: 3, name: 'React' },
-      { id: 4, name: 'Next.js' },
+      { id: 1, name: 'Next.js' },
     ],
   }, 
 //   {
